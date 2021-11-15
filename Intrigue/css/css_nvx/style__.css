@@ -1,0 +1,215 @@
+/* General  */
+
+body{
+    margin : 0;
+    padding :0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+button a{
+    text-decoration: none;
+    color: black;
+}
+/*  Navigation */
+
+nav{
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid #6F6F6F;
+    color: white;
+}
+
+nav h1{
+    color: #6F6F6F;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size: 30px;
+}
+
+nav .nav_header{
+    margin-top: 3px;
+    margin-left: 30px;
+}
+nav .nav_header a{
+    text-decoration: none; /* enleve le soulignement */
+    color: white;
+    margin-right: 10px;
+    border-bottom: 1 px solid black;
+    padding-bottom: 5px;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image:url("../../image/La_Rochelle.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:white;
+    padding:40px;
+    
+}
+
+
+header h2{
+    margin-top: -20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+
+header button{
+    padding:10px 20px;
+    background-color: white;color: black;
+    border: none;
+    font-size: 15px;
+    outline: none;
+    cursor: pointer;
+}
+
+/***************** CONTENU DE PAGE **********************/
+.presentation{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Division pour les contenus */
+.presentation .contenu .card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.presentation .contenu .card .right img{
+    margin-top: 5px;
+}
+
+.presentation .contenu .card .left{
+    font-size: 20px;
+    flex: 0 0 30%;
+    padding :30px;
+    background-color: black;
+    color: white;
+    margin-right: -30px;
+
+}
+.presentation .contenu .card.right{
+    flex: 0 0 70%;
+}
+
+/*
+Pannel 2
+*/
+.presentation .contenu2 .card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.presentation .contenu2 .card .left img{
+    margin-top: 5px;
+}
+/* le texte a droite */
+.presentation .contenu2 .card .right{
+    font-size: 20px;
+    flex: 0 0 30%;
+    padding :25px;
+    background-color: black;
+    color: white;
+    margin-left: -30px;
+
+}
+/* limage a gauche*/
+.presentation .contenu2 .card.left{
+    flex: 0 0 30%;
+
+}
+
+/***************** FOOTER**********************/
+
+footer{
+    margin-top: 40px;
+    border-top: 5px solide #6F6F6F;
+    background-color: black;
+    color: white;
+    padding: 30px 100px;
+    
+
+}
+footer h1{
+    display: flex;
+    justify-content: center;
+}
+
+footer .Infos{
+    margin-top: -10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer .Infos .Infos_div{
+    margin-right: 30px;
+    padding:10px;
+
+}
+footer .Infos .Infos_div p{
+    max-width: 200px;
+}
+
+footer #copyRight{
+    color: grey;
+    display: flex;
+    justify-content: center;
+}
+footer h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;    
+    border-bottom: 1px solid white;
+    width: 60%;
+}
+
+/*********************MOBILE ***********************/
+@media screen and(max-width:680px) {
+    nav_header{
+        margin-left: 0px;
+        margin-bottom: 20px;
+        
+    }
+
+    .contenu .card{
+        margin : 10px;
+    }
+    .contenu2 .card{
+        margin: 10px;
+    }
+
+    .presentation .contenu .card .left{
+        margin-top: 0px;
+        height: 200px;
+        width: 100%;
+    }
+    .presentation .contenu .card .right img{
+        margin-top: 0px;
+        height: 200px;
+        width: 100%;
+    }
+        .contenu .card{
+        display: block;
+    }  
+    .contenu2 .card{
+        display: block;
+    }
+
+    footer{
+        padding: 20px;        
+    }
+
+}
+
